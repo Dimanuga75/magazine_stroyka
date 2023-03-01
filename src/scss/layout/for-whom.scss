@@ -1,0 +1,35 @@
+.for-whom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  max-width: 970px;
+  width: 100%;
+  grid-gap: 20px;
+  padding: 0 30px;
+  margin: 3rem 0;
+  @media (max-width: 479.98px) {
+    padding: 0 15px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f7f7e9;
+    padding: 2rem;
+    border: 2px solid #000000;
+    border-radius: 13px;
+    row-gap: 15px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}

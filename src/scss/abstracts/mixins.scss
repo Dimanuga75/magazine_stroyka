@@ -1,0 +1,11 @@
+// Миксин @include style-link
+@mixin style-link {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color-text;
+}
+// Миксин c аргуметом @include style-link
+@mixin style($color) {
+  background-color: $color;
+}

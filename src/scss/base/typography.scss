@@ -1,0 +1,27 @@
+body {
+  font-family: CerebriSansPro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.55;
+  color: $color-text;
+}
+a {
+  color: $color-text;
+}
+.title {
+  font-size: 8.6rem;
+  line-height: 1.17;
+  color: #fff82b;
+  font-weight: 700;
+  max-width: 47rem;
+  @media (max-width: 479.98px) {
+    font-size: 5rem;
+  }
+}
+.title-2 {
+  font-size: 3rem;
+  line-height: 1.23;
+  color: $color-text;
+  font-weight: 700;
+}

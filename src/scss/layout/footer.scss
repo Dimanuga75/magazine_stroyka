@@ -1,0 +1,72 @@
+.footer {
+  &__wrapper {
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #f1dcf7;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.info {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    width: 100%;
+    justify-items: center;
+    padding: 0rem 2rem;
+    grid-row-gap: 2rem;
+  }
+
+  &__contact-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    @media (max-width: 592px) {
+      text-align: center;
+    }
+  }
+}
+.contact {
+  &__title {
+    font-weight: 700;
+  }
+}
+.link-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  @media (max-width: 592px) {
+    text-align: center;
+  }
+}
+
+.link {
+  &__item {
+    a {
+      display: block;
+      color: #337ab7;
+      line-height: 1.23;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__part {
+    font-size: 2.3rem;
+    a {
+      color: rgb(255, 3, 40);
+    }
+  }
+}
+.oferta {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  max-width: 900px;
+  a {
+    color: #337ab7;
+  }
+}
