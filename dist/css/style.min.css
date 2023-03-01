@@ -380,7 +380,7 @@ a {
   grid-row: 1/3;
   display: grid;
   grid-template-columns: 2.6rem 1fr;
-  row-gap: 3rem;
+  row-gap: 2rem;
   margin-right: 2rem;
 }
 .main__title-box {
