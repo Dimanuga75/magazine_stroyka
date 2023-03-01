@@ -8,6 +8,7 @@
     }
   }
   &__wrapper {
+    position: relative;
     padding: 1rem 2rem;
     display: grid;
     grid-template-columns: 10% 30% 35% 25%;
@@ -95,4 +96,20 @@
   &__adress {
     margin-bottom: 1rem;
   }
+}
+.header__item-wrapper {
+  display: grid;
+  grid-template-columns: 20% 60%;
+  margin-bottom: 5rem;
+  align-items: center;
+  transform: translateY(-3rem);
+}
+.header__item-box {
+  grid-row: 1/3;
+  display: flex;
+  column-gap: 2rem;
+  margin-left: 5rem;
+}
+.header__link {
+  font-weight: 500;
 }

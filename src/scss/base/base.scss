@@ -22,8 +22,9 @@ picture {
   max-width: 1300px;
   padding: 0 15px;
   width: 100vw;
-  display: flex;
-  justify-content: center;
+  //  display: flex;
+  //  justify-content: center;
+  position: relative;
   @media (max-width: 479.98px) {
     padding: 0 10px;
   }
