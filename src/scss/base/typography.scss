@@ -1,5 +1,6 @@
 body {
   font-family: CerebriSansPro, sans-serif;
+  //  font-family: SFProDisplay, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -10,13 +11,29 @@ a {
   color: $color-text;
 }
 .title {
-  font-size: 8.6rem;
+  font-size: 4rem;
   line-height: 1.17;
-  color: #fff82b;
+  color: $color-text;
   font-weight: 700;
-  max-width: 47rem;
-  @media (max-width: 479.98px) {
-    font-size: 5rem;
+  margin-bottom: 30px;
+  //  padding-top: 50px;
+  @media (max-width: 1300px) {
+    margin-bottom: calc(20px + (30 - 20) * (100vw - 320px) / 980);
+  }
+  text-align: left;
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 830px;
+  @media (max-width: 1300px) {
+    font-size: calc(14px + (20 - 14) * (100vw - 320px) / 980);
   }
 }
 .title-2 {
@@ -24,4 +41,31 @@ a {
   line-height: 1.23;
   color: $color-text;
   font-weight: 700;
+}
+.mb {
+  margin-bottom: 60px;
+  @media (max-width: 1300px) {
+    margin-bottom: calc(40px + (60 - 40) * (100vw - 320px) / 980);
+  }
+}
+.mt {
+  margin-top: 60px;
+  @media (max-width: 1300px) {
+    margin-top: calc(40px + (60 - 40) * (100vw - 320px) / 980);
+  }
+}
+.pb {
+  padding-bottom: 60px;
+  @media (max-width: 1300px) {
+    padding-bottom: calc(40px + (60 - 40) * (100vw - 320px) / 980);
+  }
+}
+.pt {
+  padding-top: 60px;
+  @media (max-width: 1300px) {
+    padding-top: calc(40px + (60 - 40) * (100vw - 320px) / 980);
+  }
+}
+.pb__null {
+  padding-bottom: 0;
 }

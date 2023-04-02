@@ -1,0 +1,39 @@
+.roof-serv {
+  padding-bottom: 50px;
+  @media (max-width: 1300px) {
+    //padding-top: calc(30px + 20 * (100vw - 320px) / 980);
+    padding-bottom: calc(30px + (50 - 30) * (100vw - 320px) / 980);
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin: 50px 0 20px;
+  }
+
+  &__name {
+  }
+}
+.roof-serv {
+  &__photo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 830px;
+    margin: 20px auto 50px;
+  }
+
+  &__img {
+    // width: ;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

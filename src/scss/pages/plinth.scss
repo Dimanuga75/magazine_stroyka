@@ -1,0 +1,15 @@
+.plinth__list-item {
+  text-align: justify;
+  position: relative;
+  padding-left: 2.5rem;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: url("../../img/check-list.svg") no-repeat;
+    width: 4rem;
+    height: 4rem;
+    top: 0rem;
+    left: 0;
+  }
+}

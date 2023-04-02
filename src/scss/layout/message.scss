@@ -1,0 +1,193 @@
+.message__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 15px;
+}
+.message__wrapper--active {
+  transform: scale(1);
+}
+.message {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 7rem;
+  border-radius: 50%;
+  transform: scale(0);
+  &-active {
+    transform: scale(1);
+    transform: translateY(80vh);
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.message__up-box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message__up-link {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+}
+.message__up-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(90deg);
+}
+.message {
+  &__box-visible {
+    position: absolute;
+  }
+  &__box-hidden {
+    display: none;
+    transform: translateY(100%);
+  }
+  &__box-hidden-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    transform: translateY(-104%);
+  }
+  &__main {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: #ffa200;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    transform: scale(1);
+    transition: transform 0.2s;
+    animation: main_menu 2s ease infinite alternate;
+  }
+
+  &__phone {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: rgb(0, 77, 115);
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__mail {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(19, 148, 228);
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__skype {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #0092e4;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__viber {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #8f5db7;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__whatsapp {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    background-color: #25d366;
+    // filter: grayscale(100%);
+    // &:hover {
+    //   filter: unset;
+    // }
+  }
+
+  &__telegram {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    background-color: #0092e4;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  }
+
+  &__close {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+    top: 0;
+    left: 0;
+  }
+}
+
+.phone__message {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.viber__message {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+.whatsapp__message {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.telegram__message {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: white;
+}
+.close__message {
+  width: 3rem;
+  height: 3rem;
+}
+.menu__message {
+  width: 6rem;
+  height: 6rem;
+}
+.message__main_noactive {
+  transform: scale(0);
+  transition: transform 0.2s;
+}

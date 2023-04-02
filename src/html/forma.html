@@ -1,0 +1,59 @@
+<section class="forma-wrapper">
+  <div class="forma forma__phone">
+    <h2 class="forma__title">Обратный звонок</h2>
+    <div class="forma__close">
+      <img src="@img/close.svg" alt="close" />
+    </div>
+    <form action="#" id="form__phone">
+      <div class="forma__item">
+        <input type="text" name="name" placeholder="Ваше имя" />
+        <span class="forma__incorrect" style="display: none"
+          >Вам необходимо указать свое имя!</span
+        >
+      </div>
+      <div class="forma__item">
+        <input
+          class="phone__check req"
+          type="text"
+          name="phone"
+          placeholder="Контактный телефон *"
+        />
+        <span class="forma__incorrect"
+          >Вам необходимо указать свой телефон!</span
+        >
+      </div>
+      <div class="forma__btn-box">
+        <button class="button forma__button" type="submit">
+          Отправить заявку
+        </button>
+      </div>
+      <div class="forma__agree-box">
+        <input
+          id="form__agree"
+          type="checkbox"
+          name="agree"
+          value="1"
+          checked="checked"
+          class="agree__check req"
+        />
+
+        <div class="forma__check-box">
+          <img class="forma__check" src="@img/check.svg" alt="check" />
+        </div>
+        <div class="agree__box">
+          <label class="forma__label" for="form__agree">
+            <div class="forma__label-text">
+              Отправляя форму, я соглашаюсь с&nbsp;
+            </div>
+          </label>
+          <a href="/pages/policy/" target="_blank">
+            политикой обработки персональных данных</a
+          >.
+        </div>
+        <div class="forma__incorrect">
+          Вы не дали согласие на обработку персональных данных.
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

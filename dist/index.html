@@ -6,101 +6,754 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="files/reset.css" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Красота сбывается</title>
+  <title>Сити Строй</title>
   <link rel=”icon” href=”/files/favicon.ico?” type="image/x-icon"> <link
-  rel=”icon” href=”/files/img/favicon.png?” type="image/png">
+  rel=”icon” href=”/files/favicon.png?” type="image/png">
 </head>
 
   <body>
     <div class="wrapper">
-      <header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <div class="header__logo-box">
-        <img src="img/main/logo.svg" alt="logo" />
+      <div class="box">
+        <header class="header" id="up">
+  <div class="header__main-box">
+    <img src="img/main/sklad2.jpg" alt="fone" />
+  </div>
+  <div class="header__wrapper container">
+    <div class="header__about-box">
+      Строительные и отделочные материалы в Воронеже и области по выгодным ценам
+    </div>
+    <div class="header__logo-box">
+      <a href="/"><img src="img/main/logo-new.png" alt="logo" /></a>
+    </div>
+
+    <div class="header__chart">График работы: <br />пн-сб с 09:00 до 18:00</div>
+    <div class="header__contact-box">
+      <div class="header__phone">
+        <a href="tel:+79155677771">+7(915)567-77-71</a>
       </div>
-      <div class="header__about-box">
-        <div class="header__about-title">ТСК Сити Строй</div>
-        <div class="header__about-text">
-          Строительные и отделочные материалы в Воронеже и области по выгодным
-          ценам
-        </div>
-      </div>
-      <div class="header__utp-box">
-        <div class="header__utp-img">
-          <img src="img/main/house2.jpg" alt="house" />
-        </div>
-        <div class="header__about-utp">
-          Закажите окна в дом и получите окно в подарок!
-        </div>
-      </div>
-      <div class="header__contact-box">
-        <div class="header__phone">
-          <a href="tel:79155677771">+7(915)56-7777-1</a>
-        </div>
-        <div class="header__chart">
-          График работы: <br />пн-пт с 09:00 до 18:00
-        </div>
-        <div class="header__adress">Адрес: г. Воронеж, ул. Свободы 69а</div>
-        <div class="header__button button">заказать обратный звонок</div>
-      </div>
+
+      <button class="header__button button order__call callback">
+        Заказать обратный звонок
+      </button>
     </div>
   </div>
 </header>
- <section class="main container">
-  <div class="main__wrapper">
-    <div class="main__menu-box">
+ <section class="main container mb">
+  <div class="main__item-wrapper">
+    <div class="main__catalog-box">
       <input class="menu__toggle" id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
+        <div class="menu__title">Каталог</div>
         <span></span>
       </label>
-      <div class="menu__title">Каталог</div>
-      <div class="menu__box">
+      <nav class="menu__box">
         <ul class="menu__wrapper">
+          <div class="menu__subtitle">Товары</div>
           <li>
-            <a class="menu__item" href="/files/window">Пластиковые окна</a>
+            <a class="menu__item" href="/pages/window#group"
+              >Пластиковые окна</a
+            >
           </li>
-          <li><a class="menu__item" href="/files/brick">Кирпич и блоки</a></li>
-          <li><a class="menu__item" href="#">Отопление</a></li>
-          <li><a class="menu__item" href="#">Гибкая кровля</a></li>
-          <li><a class="menu__item" href="#">Электричество</a></li>
+          <li>
+            <a class="menu__item" href="/pages/brick#group">Кирпич и блоки</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/heating#group">Отопление</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/roof#group">Гибкая кровля</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/electricity#group"
+              >Электричество</a
+            >
+          </li>
         </ul>
         <div class="menu__subtitle">Услуги</div>
         <ul class="menu__wrapper">
-          <li><a class="menu__item" href="#">Кладка кирпича </a></li>
-          <li><a class="menu__item" href="#"> Кровельные работы </a></li>
-          <li><a class="menu__item" href="#"> Электромонтаж </a></li>
-          <li><a class="menu__item" href="#">Потолки </a></li>
-          <li><a class="menu__item" href="#"> Фундамент под ключ </a></li>
-          <li><a class="menu__item" href="#">Цоколь и черновая стяжка </a></li>
-          <li><a class="menu__item" href="#"> Механическая штукатурка </a></li>
-          <li><a class="menu__item" href="#">Строительство под ключ</a></li>
+          <li>
+            <a class="menu__item" href="/pages/brick_services#group"
+              >Кладка кирпича
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/heating#group">Отопление</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/roof_services#group">
+              Кровельные работы
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/electricity_services#group">
+              Электромонтаж
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/ceilings_services#group"
+              >Потолки
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/foundation#group">
+              Фундамент под ключ
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/plinth#group"
+              >Цоколь и черновая стяжка
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/plaster#group">
+              Механическая штукатурка
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/build#group"
+              >Строительство под ключ</a
+            >
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
-    <div class="main__title-box">
-      <h2 class="main__title">ЗДЕСЬ ЗАГОЛОВОК</h2>
-      <div class="main__text">
-        Главная, контакты, о компании, Наши преимущества
-      </div>
-      <div class="main__button button">ЗАКАЗАТЬ ЗВОНОК</div>
-    </div>
+    <nav class="main__menu">
+      <ul class="main__item-box">
+        <li class="main__link"><a href="/">Главная</a></li>
+        <li class="main__link"><a href="#about">О нас</a></li>
+        <li class="main__link"><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
     <div class="main__slider-box">
+      <div class="slider__fon">
+        <img src="img/main/fon.jpg" alt="fone" />
+      </div>
+      <div class="slider__filter"></div>
       <div class="slider__item">
-        <img src="img/main/main1.jpg" alt="image" />
+        <div class="slider__item-box">
+          <div class="slider__action-title">Акция</div>
+          <div class="slider__item-title">
+            Закажи 5 окон и получи окно в подарок
+          </div>
+          <div class="slider__item-text">
+            При заказе от 5 пластиковых окон в дом + 1 окно в подарок
+          </div>
+        </div>
+        <div class="slider__img-box nofilter">
+          <img src="img/main/action5.png" alt="image" />
+        </div>
+        <div class="slider__button-box">
+          <button class="group__button button order__call order">
+            СДЕЛАТЬ ЗАКАЗ
+          </button>
+        </div>
       </div>
       <div class="slider__item">
-        <img src="img/main/main2.jpg" alt="image" />
+        <div class="slider__item-box">
+          <div class="slider__action-title">Доставка</div>
+          <div class="slider__item-title">
+            Прямые поставки от производителей
+          </div>
+        </div>
+        <div class="slider__img-box">
+          <img src="img/main/actions3-1.png" alt="image" />
+        </div>
+        <div class="slider__button-box">
+          <button class="group__button button order__call order">
+            СДЕЛАТЬ ЗАКАЗ
+          </button>
+        </div>
       </div>
       <div class="slider__item">
-        <img src="img/main/main3.jpg" alt="image" />
+        <div class="slider__item-box">
+          <div class="slider__action-title">Подарок</div>
+          <div class="slider__item-title">Строительство домов под ключ</div>
+          <div class="slider__item-text">
+            При заказе строительства дома под ключ + подарок: мангальная зона
+          </div>
+        </div>
+        <div class="slider__img-box nofilter">
+          <img src="img/main/house-build.png" alt="image" />
+        </div>
+        <div class="slider__button-box">
+          <button class="group__button button order__call order">
+            СДЕЛАТЬ ЗАКАЗ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main__button-box">
+    <button class="group__button button order__call order">
+      СДЕЛАТЬ ЗАКАЗ
+    </button>
+  </div>
+</section>
+
+      </div>
+      <main>
+        <div class="group__wrapper container">
+  <h2 class="title">Наши товары</h2>
+  <div class="group__box mb">
+    <a href="/pages/window#group" class="group__item">
+      <span class="group__item-img">
+        <div class="group__item-filter"></div>
+        <img src="img/group/window2.png" alt="product" />
+      </span>
+      <span class="group__item-title">Пластиковые окна</span>
+    </a>
+    <a href="/pages/brick" class="group__item">
+      <span class="group__item-img">
+        <div class="group__item-filter"></div>
+        <img src="img/group/brick.jpeg" alt="product" />
+      </span>
+      <span class="group__item-title">Кирпич</span>
+    </a>
+    <a href="/pages/heating" class="group__item">
+      <span class="group__item-img">
+        <div class="group__item-filter"></div>
+        <img src="img/group/heating.png" alt="product" />
+      </span>
+      <span class="group__item-title">Отопление</span>
+    </a>
+    <a href="/pages/electricity" class="group__item">
+      <span class="group__item-img">
+        <div class="group__item-filter"></div>
+        <img src="img/group/electric.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Электрика</span>
+    </a>
+  </div>
+  <div class="pages__button-box">
+    <button class="group__button button order__call order">
+      СДЕЛАТЬ ЗАКАЗ
+    </button>
+  </div>
+  <h2 class="title">Наши услуги</h2>
+  <div class="group__box mb">
+    <a href="/pages/roof" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/roof-work.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Кровельные работы</span>
+    </a>
+    <a href="/pages/brick_services" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/brick-work.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Кладка кирпича</span>
+    </a>
+    <a href="/pages/ceilings_services" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/ceilings-work.jpeg" alt="product" />
+      </span>
+      <span class="group__item-title">Потолки</span>
+    </a>
+    <a href="/pages/electricity_services" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/electric.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Электрика</span>
+    </a>
+    <a href="/pages/heating" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/land-work.jpeg" alt="product" />
+      </span>
+      <span class="group__item-title">Земляные работы</span>
+    </a>
+    <a href="/pages/plinth#group" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/plinth-worl.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Цоколь и черновая стяжка</span>
+    </a>
+    <a href="/pages/foundation#group" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/foundation-work.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Фундамент под ключ</span>
+    </a>
+    <a href="/pages/build" class="group__item">
+      <span class="group__item-img">
+        <img src="img/group/build.jpg" alt="product" />
+      </span>
+      <span class="group__item-title">Строительство под ключ</span>
+    </a>
+  </div>
+  <div class="pages__button-box">
+    <button class="group__button button order__call order">
+      СДЕЛАТЬ ЗАКАЗ
+    </button>
+  </div>
+</div>
+ <section class="forma-wrapper">
+  <div class="forma forma__phone">
+    <h2 class="forma__title">Обратный звонок</h2>
+    <div class="forma__close">
+      <img src="img/close.svg" alt="close" />
+    </div>
+    <form action="#" id="form__phone">
+      <div class="forma__item">
+        <input type="text" name="name" placeholder="Ваше имя" />
+        <span class="forma__incorrect" style="display: none"
+          >Вам необходимо указать свое имя!</span
+        >
+      </div>
+      <div class="forma__item">
+        <input
+          class="phone__check req"
+          type="text"
+          name="phone"
+          placeholder="Контактный телефон *"
+        />
+        <span class="forma__incorrect"
+          >Вам необходимо указать свой телефон!</span
+        >
+      </div>
+      <div class="forma__btn-box">
+        <button class="button forma__button" type="submit">
+          Отправить заявку
+        </button>
+      </div>
+      <div class="forma__agree-box">
+        <input
+          id="form__agree"
+          type="checkbox"
+          name="agree"
+          value="1"
+          checked="checked"
+          class="agree__check req"
+        />
+
+        <div class="forma__check-box">
+          <img class="forma__check" src="img/check.svg" alt="check" />
+        </div>
+        <div class="agree__box">
+          <label class="forma__label" for="form__agree">
+            <div class="forma__label-text">
+              Отправляя форму, я соглашаюсь с&nbsp;
+            </div>
+          </label>
+          <a href="/pages/policy/" target="_blank">
+            политикой обработки персональных данных</a
+          >.
+        </div>
+        <div class="forma__incorrect">
+          Вы не дали согласие на обработку персональных данных.
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+        <section class="work container pt pb">
+  <h2 class="title">Как мы работаем</h2>
+  <div class="work__wrapper">
+    <div class="work__item-box">
+      <div class="work__item">
+        <div class="work__item-img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="#ffffff"
+              d="M19.44,13c-.22,0-.45-.07-.67-.12a9.44,9.44,0,0,1-1.31-.39,2,2,0,0,0-2.48,1l-.22.45a12.18,12.18,0,0,1-2.66-2,12.18,12.18,0,0,1-2-2.66L10.52,9a2,2,0,0,0,1-2.48,10.33,10.33,0,0,1-.39-1.31c-.05-.22-.09-.45-.12-.68a3,3,0,0,0-3-2.49h-3a3,3,0,0,0-3,3.41A19,19,0,0,0,18.53,21.91l.38,0a3,3,0,0,0,2-.76,3,3,0,0,0,1-2.25v-3A3,3,0,0,0,19.44,13Zm.5,6a1,1,0,0,1-.34.75,1.06,1.06,0,0,1-.82.25A17,17,0,0,1,4.07,5.22a1.09,1.09,0,0,1,.25-.82,1,1,0,0,1,.75-.34h3a1,1,0,0,1,1,.79q.06.41.15.81a11.12,11.12,0,0,0,.46,1.55l-1.4.65a1,1,0,0,0-.49,1.33,14.49,14.49,0,0,0,7,7,1,1,0,0,0,.76,0,1,1,0,0,0,.57-.52l.62-1.4a13.69,13.69,0,0,0,1.58.46q.4.09.81.15a1,1,0,0,1,.79,1ZM21.86,2.68a1,1,0,0,0-.54-.54,1,1,0,0,0-.38-.08h-4a1,1,0,1,0,0,2h1.58l-3.29,3.3a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l3.3-3.29V7.06a1,1,0,0,0,2,0v-4A1,1,0,0,0,21.86,2.68Z"
+            />
+          </svg>
+        </div>
+        <div class="work__item-title">Ваша заявка</div>
+      </div>
+      <div class="work__item-subtitle">ШАГ 1</div>
+      <div class="work__item-text">
+        Вы связываетесь или оставляете заявку через сайт для обсуждения
+        некоторых деталей в телефонном режиме
+      </div>
+    </div>
+    <div class="work__item-box">
+      <div class="work__item">
+        <div class="work__item-img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="#ffffff"
+              d="M6.62,13.08a.9.9,0,0,0-.54.54,1,1,0,0,0,1.3,1.3,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33A.84.84,0,0,0,8,14a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,6.62,13.08Zm13.14-4L18.4,5.05a3,3,0,0,0-2.84-2H8.44A3,3,0,0,0,5.6,5.05L4.24,9.11A3,3,0,0,0,2,12v4a3,3,0,0,0,2,2.82V20a1,1,0,0,0,2,0V19H18v1a1,1,0,0,0,2,0V18.82A3,3,0,0,0,22,16V12A3,3,0,0,0,19.76,9.11ZM7.49,5.68A1,1,0,0,1,8.44,5h7.12a1,1,0,0,1,1,.68L17.61,9H6.39ZM20,16a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H19a1,1,0,0,1,1,1Zm-3.38-2.92a.9.9,0,0,0-.54.54,1,1,0,0,0,1.3,1.3.9.9,0,0,0,.54-.54A.84.84,0,0,0,18,14a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,16.62,13.08ZM13,13H11a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2Z"
+            />
+          </svg>
+        </div>
+        <div class="work__item-title">Выезд на объект</div>
+      </div>
+      <div class="work__item-subtitle">ШАГ 2</div>
+      <div class="work__item-text">
+        Выезд на объект специалиста для замера и обсуждения основных
+        составляющих Вашего проекта по строительству дома и других видов работ
+      </div>
+    </div>
+    <div class="work__item-box">
+      <div class="work__item">
+        <div class="work__item-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#ffffff"
+              d="M12.71,17.29a1,1,0,0,0-.16-.12.56.56,0,0,0-.17-.09.6.6,0,0,0-.19-.06.93.93,0,0,0-.57.06.9.9,0,0,0-.54.54A.84.84,0,0,0,11,18a1,1,0,0,0,.07.38,1.46,1.46,0,0,0,.22.33A1,1,0,0,0,12,19a.84.84,0,0,0,.38-.08,1.15,1.15,0,0,0,.33-.21A1,1,0,0,0,13,18a1,1,0,0,0-.08-.38A1,1,0,0,0,12.71,17.29ZM8.55,13.17a.56.56,0,0,0-.17-.09A.6.6,0,0,0,8.19,13a.86.86,0,0,0-.39,0l-.18.06-.18.09-.15.12A1.05,1.05,0,0,0,7,14a1,1,0,0,0,.29.71,1.15,1.15,0,0,0,.33.21A1,1,0,0,0,9,14a1.05,1.05,0,0,0-.29-.71Zm.16,4.12a1,1,0,0,0-.33-.21A1,1,0,0,0,7.8,17l-.18.06a.76.76,0,0,0-.18.09,1.58,1.58,0,0,0-.15.12,1,1,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33A1,1,0,0,0,8,19a.84.84,0,0,0,.38-.08,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1,1,0,0,0,8.71,17.29Zm2.91-4.21a1,1,0,0,0-.33.21A1.05,1.05,0,0,0,11,14a1,1,0,0,0,1.38.92,1.15,1.15,0,0,0,.33-.21A1,1,0,0,0,13,14a1.05,1.05,0,0,0-.29-.71A1,1,0,0,0,11.62,13.08Zm5.09,4.21a1.15,1.15,0,0,0-.33-.21,1,1,0,0,0-1.09.21,1,1,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33A1,1,0,0,0,16,19a.84.84,0,0,0,.38-.08,1.15,1.15,0,0,0,.33-.21,1,1,0,0,0,.21-1.09A1,1,0,0,0,16.71,17.29ZM16,5H8A1,1,0,0,0,7,6v4a1,1,0,0,0,1,1h8a1,1,0,0,0,1-1V6A1,1,0,0,0,16,5ZM15,9H9V7h6Zm3-8H6A3,3,0,0,0,3,4V20a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V4A3,3,0,0,0,18,1Zm1,19a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1Zm-2.45-6.83a.56.56,0,0,0-.17-.09.6.6,0,0,0-.19-.06.86.86,0,0,0-.39,0l-.18.06-.18.09-.15.12A1.05,1.05,0,0,0,15,14a1,1,0,0,0,1.38.92,1.15,1.15,0,0,0,.33-.21A1,1,0,0,0,17,14a1.05,1.05,0,0,0-.29-.71Z"
+            />
+          </svg>
+        </div>
+        <div class="work__item-title">Просчет стоимости</div>
+      </div>
+      <div class="work__item-subtitle">ШАГ 3</div>
+      <div class="work__item-text">
+        Просчитывается полная стоимость работ под ключ «от А до Я». После чего
+        мы Вас знакомим со сметой.
+      </div>
+    </div>
+    <div class="work__item-box">
+      <div class="work__item">
+        <div class="work__item-img">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="#ffffff"
+              d="M13,14H9a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2ZM17,4H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Zm-3-9H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"
+            />
+          </svg>
+        </div>
+        <div class="work__item-title">Заключение договора</div>
+      </div>
+      <div class="work__item-subtitle">ШАГ 4</div>
+      <div class="work__item-text">
+        Заключаем двусторонний договор на выполнение строительно-монтажных
+        работ.
+      </div>
+    </div>
+    <div class="work__item-box">
+      <div class="work__item">
+        <div class="work__item-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#ffffff"
+              d="M14,8h1a1,1,0,0,0,0-2H14a1,1,0,0,0,0,2Zm0,4h1a1,1,0,0,0,0-2H14a1,1,0,0,0,0,2ZM9,8h1a1,1,0,0,0,0-2H9A1,1,0,0,0,9,8Zm0,4h1a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Zm12,8H20V3a1,1,0,0,0-1-1H5A1,1,0,0,0,4,3V20H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm-8,0H11V16h2Zm5,0H15V15a1,1,0,0,0-1-1H10a1,1,0,0,0-1,1v5H6V4H18Z"
+            />
+          </svg>
+        </div>
+        <div class="work__item-title">Выполнение работ</div>
+      </div>
+      <div class="work__item-subtitle">ШАГ 5</div>
+      <div class="work__item-text">
+        Проводятся качественные строительные работы согласно договору.
+      </div>
+    </div>
+    <div class="work__item-box">
+      <div class="work__item">
+        <div class="work__item-img">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#ffffff"
+              d="M13,16H7a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2ZM9,10h2a1,1,0,0,0,0-2H9a1,1,0,0,0,0,2Zm12,2H18V3a1,1,0,0,0-.5-.87,1,1,0,0,0-1,0l-3,1.72-3-1.72a1,1,0,0,0-1,0l-3,1.72-3-1.72a1,1,0,0,0-1,0A1,1,0,0,0,2,3V19a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V13A1,1,0,0,0,21,12ZM5,20a1,1,0,0,1-1-1V4.73L6,5.87a1.08,1.08,0,0,0,1,0l3-1.72,3,1.72a1.08,1.08,0,0,0,1,0l2-1.14V19a3,3,0,0,0,.18,1Zm15-1a1,1,0,0,1-2,0V14h2Zm-7-7H7a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Z"
+            />
+          </svg>
+        </div>
+        <div class="work__item-title">Сдача объекта</div>
+      </div>
+      <div class="work__item-subtitle">ШАГ 6</div>
+      <div class="work__item-text">
+        Вы принимаете проделанную работу. Производим заключительный расчет.
+        Остаёмся на связи для будущих Ваших проектов.
       </div>
     </div>
   </div>
 </section>
+ <section class="about container pb" id="about">
+  <h2 class="title">О нашей компании</h2>
+  <div class="about__wrapper pb">
+    <div class="about__item">
+      <div class="about__text-box">
+        <div class="about__text">
+          Торгово-строительная компания "Сити Строй" на строительном рынке с
+          2008 года. Основное направление деятельности - организация исполнения
+          работ. Многолетний опыт, высококвалифицированные специалисты, надежные
+          контрагенты, использование инноваций - рациональная политика компании
+          позволяет организовать выполнение строительных и отделочных работ
+          любой сложности с оптимальными затратами.
+        </div>
+        <div class="about__text">
+          Наша компания занимается прямыми поставками строительных материалов
+          без посредников. Мы тщательно подбираем поставщиков, проверяем
+          качество продукции по нормативным актам. Мы избавим Вас от проблемы
+          поиска нужных вам материалов - у нас Вы можете купить любую
+          интересующую Вас новинку в любом количестве! Наша специализация - это
+          продажа стройматериалов в Воронеже.
+        </div>
+        <div class="about__text">
+          Зачем долго ходить по магазинам? У нас на сайте вы сможете подобрать
+          нужный товар, заказать его через форму и менеджер свяжется с Вами в
+          ближайшие 10 минут! Мы сэкономим Вам время и деньги. Поможем подобрать
+          материалы и их количество, просчитать сумму доставки по городу
+          Воронеж.
+        </div>
+      </div>
+      <div class="about__img-box">
+        <div class="group__item-filter"></div>
+        <img src="img/about/about1.jpg" alt="about" />
+      </div>
+    </div>
+    <div class="about__item left">
+      <div class="about__img-box left-img">
+        <div class="group__item-filter"></div>
+        <img src="img/about/about2.jpg" alt="about" />
+      </div>
+      <div class="about__text-box">
+        <div class="about__text">
+          Наш интернет-магазин также имеет точки продаж в городе, является одним
+          из крупнейших дистрибьюторов самых лучших строительных брендов. Вся
+          продукция, которую мы продаем, имеет сертификаты качества и проверена
+          специалистами. Наши склады пополняют свой ассортимент каждый день.
+        </div>
+        <div class="about__text">
+          Мы предоставляем комплексную продажу стройматериалов, у нас можно
+          покупать не только в розницу, но и оптом с хорошими скидками. Опт -
+          это второе направление нашей деятельности. Нашими клиентами уже стали
+          коммерческие организации, магазины, строительные фирмы, мелкие
+          строительные бригады и розничные покупатели.
+        </div>
+        <div class="about__text">
+          Кто-то задумался, а что с доставкой? Вне зависимости от купленного
+          Вами объема, мы доставим продукцию на нашей машине. Вопрос оперативной
+          доставки мы берем на себя! Выбирая нашу компанию, Вы экономите время и
+          деньги!
+        </div>
+        <div class="about__text">
+          Если у Вас есть готовая смета на объект, можете отправить ее нам на
+          электронную почту, мы просчитаем сумму, уточним наличие и перезвоним
+          вам. Мы работаем ежедневно с 9.00 до 18:00.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pages__button-box">
+    <button class="about__button button order__call consultation">
+      Получить консультацию
+    </button>
+  </div>
+</section>
+
+      </main>
+      <div class="message__wrapper">
+  <div class="message">
+    <div class="message__box-hidden">
+      <div class="message__up-box message__item">
+        <a class="message__up-link" href="#up" target="_blank">
+          <img
+            class="message__up-img"
+            src="img/message/above_thearrow_1550.png"
+            alt="up"
+          />
+        </a>
+      </div>
+      <div class="message__phone message__item">
+        <a href="tel:+79155677771" target="_blank"
+          ><img class="phone__message" src="img/message/phone.svg" alt="phone"
+        /></a>
+      </div>
+
+      <div class="message__viber message__item">
+        <a href="viber://chat?number=79155677771" target="_blank"
+          ><img
+            class="viber__message"
+            src="img/message/phone-pause.svg"
+            alt="viber"
+        /></a>
+      </div>
+      <div class="message__whatsapp message__item">
+        <a href="https://wa.me/79155677771" target="_blank"
+          ><img
+            class="whatsapp__message"
+            src="img/message/whatsapp.svg"
+            alt="whatsapp"
+        /></a>
+      </div>
+      <div class="message__telegram message__item">
+        <a href="https://t.me/Altair65" target="_blank"
+          ><img
+            class="telegram__message"
+            src="img/message/telegram.svg"
+            alt="telegram"
+        /></a>
+      </div>
+    </div>
+    <div class="message__box-visible">
+      <div class="message__close message__item">
+        <a href="/"
+          ><img
+            class="close__message"
+            src="img/message/кретсик.png"
+            alt="close"
+        /></a>
+      </div>
+      <div class="message__main message__item">
+        <a href="/"
+          ><img class="menu__message" src="img/message/comment.svg" alt="menu"
+        /></a>
+      </div>
+    </div>
+  </div>
+</div>
+ <footer class="footer__wrapper" id="contact">
+  <div class="footer__wrapper1">
+    <div class="container footer__box">
+      <div class="footer__item info">
+        <div class="footer__img">
+          <a href="/"><img src="img/main/logo-new.png" alt="logo" /></a>
+        </div>
+        <div class="footer__item-text">Адрес: г. Воронеж, ул. Свободы 69а.</div>
+
+        <div class="footer__item-text">
+          Наш Email:
+          <a class="email" href="mailto:citystroitorg@mail.ru"
+            >citystroitorg@mail.ru</a
+          >
+        </div>
+
+        <div class="footer__item-text">Напишите или позвоните нам:</div>
+        <div class="footer__item-messenger">
+          <div class="footer__messenger">
+            <a href="https://wa.me/79155677771" target="_blank"
+              ><img src="img/message/whatsapp.svg" alt="whatsapp"
+            /></a>
+          </div>
+          <div class="footer__messenger">
+            <a href="https://t.me/Altair65" target="_blank"
+              ><img src="img/message/telegram-foot.svg" alt="telegram"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="footer__item product">
+        <ul>
+          <div class="footer__nav-title">Наши товары</div>
+          <li>
+            <a class="footer__link" href="/pages/window#group"
+              >Пластиковые окна</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/brick#group">Кирпич и блоки</a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/heating#group">Отопление</a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/roof#group">Гибкая кровля</a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/electricity#group"
+              >Электричество</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="footer__item service">
+        <ul>
+          <div class="footer__nav-title">Наши услуги</div>
+          <li>
+            <a class="footer__link" href="/pages/brick_services#group"
+              >Кладка кирпича
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/heating#group">Отопление</a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/roof_services#group">
+              Кровельные работы
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/electricity_services#group">
+              Электромонтаж
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/ceilings_services#group"
+              >Потолки
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/foundation#group">
+              Фундамент под ключ
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/plinth#group"
+              >Цоколь и черновая стяжка
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/plaster#group">
+              Механическая штукатурка
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="/pages/build#group"
+              >Строительство под ключ</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__item about-footer">
+        <nav>
+          <div class="footer__nav-title">О нас</div>
+          <ul>
+            <li>
+              <a class="footer__link" href="#about">О нашей компании</a>
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="../pages/policy/index.html"
+                target="_blank"
+                >Политика конфиденциальности</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__phone">
+          <div class="footer__phone-img">
+            <img src="img/message/phone-pause.svg" alt="phone" />
+          </div>
+          <a class="footer__link phone" href="tel:+79155677771"
+            >+7(915)567-77-71</a
+          >
+        </div>
+        <div class="footer__phone">
+          <div class="footer__phone-img">
+            <img src="img/message/phone-pause.svg" alt="phone" />
+          </div>
+          <a class="footer__link phone" href="tel:+79805426594"
+            >+7(980)542-65-94</a
+          >
+        </div>
+        <button class="footer__button button order__call callback">
+          Заказать звонок
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container footer__warning">
+    Сайт не является публичной офертой и носит информационный характер.
+  </div>
+</footer>
 
     </div>
-    
     <script src="js/app.min.js"></script>
   </body>
 </html>

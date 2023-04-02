@@ -1,0 +1,124 @@
+.bricks {
+  &__wrapper {
+    // background-color: $color-background;
+  }
+  &__box-main {
+    // padding-top: 50px;
+    // padding-bottom: 50px;
+    // @media (max-width: 1300px) {
+    //   padding-top: calc(30px + 20 * (100vw - 320px) / 980);
+    //   padding-bottom: calc(30px + (50 - 30) * (100vw - 320px) / 980);
+    // }
+  }
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-size: 24px;
+    @media (max-width: 1300px) {
+      margin-bottom: calc(30px + 20 * (100vw - 320px) / 980);
+      font-size: calc(18px + (24 - 18) * (100vw - 320px) / 980);
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-items: center;
+    gap: 5rem;
+    max-width: 880px;
+    margin: 0 auto;
+    @media (max-width: 590px) {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+  }
+
+  &__img-box {
+    width: 260px;
+    height: 171px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1);
+      transition: ease 0.3s;
+      &:hover {
+        transform: scale(1.8);
+        transition: ease 0.3s;
+        backface-visibility: hidden;
+      }
+    }
+  }
+}
+
+.bricks-item {
+  &__title {
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    @media (max-width: 590px) {
+      display: flex;
+      align-items: end;
+    }
+  }
+}
+.bricks__box-item {
+  margin: 50px 0;
+  @media (max-width: 1300px) {
+    margin: calc(30px + 20 * (100vw - 320px) / 980) 0;
+  }
+}
+.bricks__specifications-box {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  @media (max-width: 1300px) {
+    margin: calc(30px + 20 * (100vw - 320px) / 980) 0;
+  }
+}
+table {
+  border: 1px solid $color-text;
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+td,
+th {
+  border: 1px solid $color-text;
+  padding: 5px;
+  vertical-align: middle;
+}
+.th__two-cell {
+  @media (max-width: 359px) {
+    max-width: 200px;
+  }
+}
+caption {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+}
+.tr__grey {
+  background: #b4b4b4;
+}
+.bricks__description {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.bricks__text {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.description__title {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  text-align: center;
+}

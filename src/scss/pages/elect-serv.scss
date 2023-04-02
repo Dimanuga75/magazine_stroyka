@@ -1,0 +1,40 @@
+.elect-serv {
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    gap: 15px;
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+  &__call {
+    font-weight: 600;
+    font-size: 28px;
+    text-align: left;
+    @media (max-width: 1300px) {
+      font-size: calc(18px + (28 - 18) * (100vw - 320px) / 980);
+    }
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+  }
+  &__text:nth-of-type(3) {
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    width: 300px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px;
+  }
+}

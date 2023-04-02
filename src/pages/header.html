@@ -1,0 +1,171 @@
+<header class="header header__dop" id="up">
+  <div class="header__main-box">
+    <img src="../../img/main/sklad2.jpg" alt="fone" />
+  </div>
+  <div class="header__wrapper container">
+    <div class="header__about-box">
+      Строительные и отделочные материалы в Воронеже и области по выгодным ценам
+    </div>
+    <div class="header__logo-box">
+      <a href="/"><img src="../../img/main/logo-new.png" alt="logo" /></a>
+    </div>
+
+    <div class="header__chart">График работы: <br />пн-сб с 09:00 до 18:00</div>
+    <div class="header__contact-box">
+      <div class="header__phone">
+        <a href="tel:+79155677771">+7(915)567-77-71</a>
+      </div>
+
+      <button class="header__button button order__call callback">
+        Заказать обратный звонок
+      </button>
+    </div>
+  </div>
+  <div class="main__item-wrapper">
+    <div class="main__catalog-box nomain">
+      <input class="menu__toggle dop-page" id="menu__toggle" type="checkbox" />
+      <label class="menu__btn nomain-page" for="menu__toggle">
+        <div class="menu__title">Каталог</div>
+        <span class="pages"></span>
+      </label>
+      <nav class="menu__box page-dop">
+        <ul class="menu__wrapper">
+          <div class="menu__subtitle">Товары</div>
+          <li>
+            <a class="menu__item" href="/pages/window#group"
+              >Пластиковые окна</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/brick#group#group"
+              >Кирпич и блоки</a
+            >
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/heating#group">Отопление</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/roof#group">Гибкая кровля</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/electricity#group"
+              >Электричество</a
+            >
+          </li>
+        </ul>
+        <div class="menu__subtitle">Услуги</div>
+        <ul class="menu__wrapper">
+          <li>
+            <a class="menu__item" href="/pages/brick_services#group"
+              >Кладка кирпича
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/heating#group">Отопление</a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/roof_services#group">
+              Кровельные работы
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/electricity_services#group">
+              Электромонтаж
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/ceilings_services#group"
+              >Потолки
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/foundation#group">
+              Фундамент под ключ
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/plinth#group"
+              >Цоколь и черновая стяжка
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/plaster#group">
+              Механическая штукатурка
+            </a>
+          </li>
+          <li>
+            <a class="menu__item" href="/pages/build#group"
+              >Строительство под ключ</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <nav>
+      <ul class="main__item-box" id="group">
+        <li class="main__link"><a href="/">Главная</a></li>
+        <li class="main__link"><a href="/#about">О нас</a></li>
+        <li class="main__link"><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="forma-wrapper">
+  <div class="forma forma__phone">
+    <h2 class="forma__title">Обратный звонок</h2>
+    <div class="forma__close">
+      <img src="../../img/close.svg" alt="close" />
+    </div>
+    <form action="#" id="form__phone">
+      <div class="forma__item">
+        <input type="text" name="name" placeholder="Ваше имя" />
+        <span class="forma__incorrect" style="display: none"
+          >Вам необходимо указать свое имя!</span
+        >
+      </div>
+      <div class="forma__item">
+        <input
+          class="phone__check req"
+          type="text"
+          name="phone"
+          placeholder="Контактный телефон *"
+        />
+        <span class="forma__incorrect"
+          >Вам необходимо указать свой телефон!</span
+        >
+      </div>
+      <div class="forma__btn-box">
+        <button class="button forma__button" type="submit">
+          Отправить заявку
+        </button>
+      </div>
+      <div class="forma__agree-box">
+        <input
+          id="form__agree"
+          type="checkbox"
+          name="agree"
+          value="1"
+          checked="checked"
+          class="agree__check req"
+        />
+
+        <div class="forma__check-box">
+          <img class="forma__check" src="../../img/check.svg" alt="check" />
+        </div>
+        <div class="agree__box">
+          <label class="forma__label" for="form__agree">
+            <div class="forma__label-text">Отправляя форму, я соглашаюсь с</div>
+          </label>
+          <a href="/pages/policy/" target="_blank"
+            >политикой обработки персональных данных</a
+          >.
+        </div>
+        <div class="forma__incorrect">
+          Вы не дали согласие на обработку персональных данных.
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+@@include('../pages/message.html', {})

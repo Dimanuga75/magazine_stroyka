@@ -1,0 +1,66 @@
+@media (max-width: 767px) {
+  @-moz-document url-prefix() {
+    .button {
+      font-size: 2rem;
+    }
+    .header__button {
+      font-size: 12px;
+    }
+    .header__phone {
+      font-size: 22px !important;
+    }
+    .header__item-box {
+      column-gap: 1.8rem !important;
+    }
+    .main__link a {
+      font-size: 14px !important;
+    }
+    .slider__item-title {
+      font-size: 18px;
+    }
+    .slider__item-text {
+      font-size: 14px;
+    }
+    .slider__item {
+      padding-top: 30px;
+    }
+    .main__slider-box {
+      max-height: 200px;
+    }
+    .title {
+      font-size: 26px;
+    }
+    .group__item {
+      padding-bottom: 10px;
+      height: unset;
+      min-height: 270px;
+    }
+    .group__item-title {
+      font-size: 18px;
+    }
+    .menu__item {
+      font-size: 14px;
+    }
+    .forma__title {
+      font-size: 18px !important;
+    }
+    .forma__close {
+      right: 7px !important;
+    }
+    .work__item-title {
+      font-size: 14px;
+    }
+    table {
+      font-size: 10px;
+    }
+    .bricks__box {
+      margin-top: 70px;
+    }
+    .heating__subtitle {
+      font-size: 22px;
+    }
+    .heating__turnkey-subtitle {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   border: 0;
+  /*margin: 0;
+  padding: 0;*/
 }
 *,
 *:before,
@@ -8,7 +10,10 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+ul,
+li {
+  list-style: none;
+}
 /*:focus,
 :active {
   online: none;
@@ -22,6 +27,7 @@ button {
   cursor: pointer;
   font-family: inherit;
   background-color: transparent;
+  border: none;
 }
 
 button::-moz-focus-inner {
